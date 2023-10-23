@@ -30,7 +30,7 @@ const SideMenu = () => {
                     width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#718096" fill="none"
                     stroke-linecap="round" stroke-linejoin="round"
                     onClick={toggleMenu}
-                    >
+                >
                     <path stroke="none" d="M0 0h24v24H0z" />
                     <line x1="4" y1="6" x2="20" y2="6" />
                     <line x1="4" y1="12" x2="20" y2="12" />
@@ -82,7 +82,7 @@ const SideMenu = () => {
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <Link to="students">
+                        <Link to="/students">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="20" height="20"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -96,7 +96,7 @@ const SideMenu = () => {
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <Link to="seminars">
+                        <Link to="/seminars">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-presentation" width="20"
                                 height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -111,7 +111,7 @@ const SideMenu = () => {
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <Link to="videos">
+                        <Link to="/video-library">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-keyboard-hide" width="20"
                                 height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -130,7 +130,7 @@ const SideMenu = () => {
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <Link to="forum">
+                        <Link to="/forum">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-news" width="20" height="20"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -145,7 +145,7 @@ const SideMenu = () => {
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <Link to="faqs">
+                        <Link to="/faqs">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark" width="20"
                                 height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -165,7 +165,7 @@ const SideMenu = () => {
                     class="opacity-0 pointer-events-none icon icon-tabler icon-tabler-menu-2 cursor-pointer mt-8" width="20"
                     height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#718096" fill="none" stroke-linecap="round"
                     stroke-linejoin="round"
-                    >
+                >
                     <path stroke="none" d="M0 0h24v24H0z" />
                     <line x1="4" y1="6" x2="20" y2="6" />
                     <line x1="4" y1="12" x2="20" y2="12" />
@@ -194,7 +194,7 @@ const SideMenu = () => {
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-2 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <Link to="/videos" class="ml-2">Video Library</Link>
+                        <Link to="/video-library" class="ml-2">Video Library</Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-2 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
