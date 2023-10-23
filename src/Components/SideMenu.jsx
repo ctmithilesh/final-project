@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const SideMenu = () => {
 
@@ -38,7 +39,7 @@ const SideMenu = () => {
                 <ul aria-orientation="vertical" class="rounded py-8">
                     <li
                         class="cursor-pointer text-blue-500 text-sm leading-3 tracking-normal py-1 hover:text-blue-700 focus:text-blue-700 focus:outline-none">
-                        <a href="index.html">
+                        <Link to="/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid" width="20" height="20"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -48,11 +49,11 @@ const SideMenu = () => {
                                 <rect x="4" y="14" width="6" height="6" rx="1"></rect>
                                 <rect x="14" y="14" width="6" height="6" rx="1"></rect>
                             </svg>
-                        </a>
+                        </Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 focus:text-blue-700 focus:outline-none flex items-center">
-                        <a href="./courses.html">
+                        <Link to="/courses">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stack" width="20" height="20"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -61,11 +62,11 @@ const SideMenu = () => {
                                 <polyline points="4 12 12 16 20 12" />
                                 <polyline points="4 16 12 20 20 16" />
                             </svg>
-                        </a>
+                        </Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <a href="./instructors.html">
+                        <Link to="instructors">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools" width="20" height="20"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -77,11 +78,11 @@ const SideMenu = () => {
                                 <polyline points="16 12 21 17 17 21 12 16" />
                                 <line x1="16" y1="17" x2="14.5" y2="18.5" />
                             </svg>
-                        </a>
+                        </Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <a href="./students.html">
+                        <Link to="students">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="20" height="20"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -91,11 +92,11 @@ const SideMenu = () => {
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                                 <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
                             </svg>
-                        </a>
+                        </Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <a href="./seminars.html">
+                        <Link to="seminars">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-presentation" width="20"
                                 height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -106,11 +107,11 @@ const SideMenu = () => {
                                 <line x1="9" y1="20" x2="15" y2="20" />
                                 <path d="M8 12l3 -3l2 2l3 -3" />
                             </svg>
-                        </a>
+                        </Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <a href="./videos.html">
+                        <Link to="videos">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-keyboard-hide" width="20"
                                 height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -125,11 +126,11 @@ const SideMenu = () => {
                                 <line x1="10" y1="11" x2="14" y2="11" />
                                 <path d="M10 21l2 -2l2 2" />
                             </svg>
-                        </a>
+                        </Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <a href="./forum.html">
+                        <Link to="forum">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-news" width="20" height="20"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -140,11 +141,11 @@ const SideMenu = () => {
                                 <line x1="8" y1="12" x2="12" y2="12" />
                                 <line x1="8" y1="16" x2="12" y2="16" />
                             </svg>
-                        </a>
+                        </Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <a href="./FAQ.html">
+                        <Link to="faqs">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark" width="20"
                                 height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -152,7 +153,7 @@ const SideMenu = () => {
                                 <path d="M8 8 a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
                                 <line x1="12" y1="19" x2="12" y2="19.01" />
                             </svg>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
@@ -173,35 +174,35 @@ const SideMenu = () => {
                 <ul aria-orientation="vertical" class="rounded py-8 pl-2 pr-32 whitespace-no-wrap">
                     <li
                         class="cursor-pointer text-blue-500 text-sm leading-3 tracking-normal py-2 hover:text-blue-700 focus:text-blue-700 focus:outline-none">
-                        <a href="index.html" class="ml-2">Dashboard</a>
+                        <Link to="/" class="ml-2">Dashboard</Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-2 hover:text-blue-700 focus:text-blue-700 focus:outline-none flex items-center">
-                        <a href="./courses.html" class="ml-2">Courses</a>
+                        <Link to="/courses" class="ml-2">Courses</Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-2 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <a href="./instructors.html" class="ml-2">Instructors</a>
+                        <Link to="/instructors" class="ml-2">Instructors</Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-2 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <a href="./students.html" class="ml-2">Students</a>
+                        <Link to="/students" class="ml-2">Students</Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-2 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <a href="./seminars.html" class="ml-2">Seminars</a>
+                        <Link to="/seminars" class="ml-2">Seminars</Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-2 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <a href="./videos.html" class="ml-2">Video Library</a>
+                        <Link to="/videos" class="ml-2">Video Library</Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-2 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <a href="./forum.html" class="ml-2">Forum</a>
+                        <Link to="/forum" class="ml-2">Forum</Link>
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-2 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <a href="./FAQ.html" class="ml-2">FAQs</a>
+                        <Link to="/faqs" class="ml-2">FAQs</Link>
                     </li>
                 </ul>
             </div>
