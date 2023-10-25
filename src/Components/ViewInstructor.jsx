@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-const ViewInstructor = () => {
+const ViewInstructor = () => { 
   return (
     <div class="w-full">
-      <div class="w-full px-6">
+      <div class="w-full px-6"> 
         <div class="lg:flex flex-wrap">
           <div class="py-10 lg:w-2/3 w-full sm:pr-6 sm:border-r border-gray-300">
             <Link to="/instructors">
@@ -21,7 +21,6 @@ const ViewInstructor = () => {
                 <h4 class="text-xl text-gray-900">Instructor Details</h4>
               </div>
             </Link>
-
             <div class="relative">
               <img class="h-56 shadow w-full object-cover object-center"
                 src="https://tuk-cdn.s3.amazonaws.com/assets/components/grid_cards/gc_29.png" alt="" />

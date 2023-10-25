@@ -6,11 +6,11 @@ import InstructorsPage from './Pages/InstructorsPage';
 import ViewInstructorPage from './Pages/ViewInstructorPage';
 import StudentsPage from './Pages/StudentsPage';
 import SeminarsPage from './Pages/SeminarsPage';
-import VideoLibrary from './Components/VideoLibrary';
 import VideoLibraryPage from './Pages/VideoLibraryPage';
 import ForumPage from './Pages/ForumPage';
-import ForumThread from './Components/ForumThread';
 import ForumThreadPage from './Pages/ForumThreadPage';
+import FAQPage from './Pages/FAQPage';
+import CourseInnerPage from './Pages/CourseInnerPage';
 
 function App() {
   return (
@@ -24,6 +24,8 @@ function App() {
       <Route exact path='/video-library' element={<VideoLibraryPage />} />
       <Route exact path='/forum' element={<ForumPage />} />
       <Route exact path='/forum-thread' element={<ForumThreadPage />} />
+      <Route exact path='/faqs' element={<FAQPage />} />
+      <Route exact path='/courses-inner' element={<CourseInnerPage />} />
     </Routes>
   );
 }

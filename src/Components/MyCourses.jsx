@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const MyCourses = () => {
   return (
@@ -81,7 +82,7 @@ const MyCourses = () => {
         Investment Banking
       </h3>
       <div class="md:flex items-center  mt-6  flex-wrap">
-        <a href="./courses-inner.html">
+        <Link to="/courses-inner">
           <div class="shadow px-4 py-5 border-b-4 border-gray-800 md:max-w-sm md:mr-5 mb-6  ">
             <h5 class="mb-2 text-sm text-gray-600">Finance</h5>
             <h3 class="font-medium text-gray-900 mb-3">
@@ -140,8 +141,8 @@ const MyCourses = () => {
               </div>
             </div>
           </div>
-        </a>
-        <a href="./courses-inner.html">
+        </ Link>
+        <Link to="/courses-inner">
           <div class="shadow px-4 py-5 border-b-4 border-gray-800 md:max-w-sm md:mr-5 mb-6">
             <h5 class="mb-2 text-sm text-gray-600">Finance</h5>
             <h3 class="font-medium text-gray-900 mb-3">
@@ -200,8 +201,8 @@ const MyCourses = () => {
               </div>
             </div>
           </div>
-        </a>
-        <a href="./courses-inner.html">
+        </ Link>
+        <Link to="/courses-inner">
           <div class="shadow px-4 py-5 border-b-4 border-gray-800 md:max-w-sm md:mr-5 mb-6">
             <h5 class="mb-2 text-sm text-gray-600">Finance</h5>
             <h3 class="font-medium text-gray-900 mb-3">
@@ -260,8 +261,8 @@ const MyCourses = () => {
               </div>
             </div>
           </div>
-        </a>
-        <a href="./courses-inner.html">
+        </ Link>
+        <Link to="/courses-inner">
           <div class="shadow px-4 py-5 border-b-4 border-gray-800 md:max-w-sm md:mr-5 mb-6">
             <h5 class="mb-2 text-sm text-gray-600">Finance</h5>
             <h3 class="font-medium text-gray-900 mb-3">
@@ -320,11 +321,11 @@ const MyCourses = () => {
               </div>
             </div>
           </div>
-        </a>
+        </ Link>
       </div>
       <h3 class="text-gray-900 mt-8 mb-6">Design</h3>
       <div class="md:flex items-center  mt-6  flex-wrap">
-        <a href="./courses-inner.html">
+        <Link to="/courses-inner">
           <div class="shadow px-4 py-5 border-b-4 border-red-700 md:max-w-sm md:mr-5 mb-6">
             <h5 class="mb-2 text-sm text-gray-600">UX Design</h5>
             <h3 class="text-gray-900 mb-3">
@@ -383,8 +384,8 @@ const MyCourses = () => {
               </div>
             </div>
           </div>
-        </a>
-        <a href="./courses-inner.html">
+        </ Link>
+        <Link to="/courses-inner">
           <div class="shadow px-4 py-5 border-b-4 border-red-700 md:max-w-sm md:mr-5 mb-6">
             <h5 class="mb-2 text-sm text-gray-600">UX Design</h5>
             <h3 class="text-gray-900 mb-3">
@@ -443,8 +444,8 @@ const MyCourses = () => {
               </div>
             </div>
           </div>
-        </a>
-        <a href="./courses-inner.html">
+        </ Link>
+        <Link to="/courses-inner">
           <div class="shadow px-4 py-5 border-b-4 border-red-700 md:max-w-sm md:mr-5 mb-6">
             <h5 class="mb-2 text-sm text-gray-600">UX Design</h5>
             <h3 class="text-gray-900 mb-3">
@@ -503,8 +504,8 @@ const MyCourses = () => {
               </div>
             </div>
           </div>
-        </a>
-        <a href="./courses-inner.html">
+        </ Link>
+        <Link to="/courses-inner">
           <div class="shadow px-4 py-5 border-b-4 border-red-700 md:max-w-sm md:mr-5 mb-6">
             <h5 class="mb-2 text-sm text-gray-600">UX Design</h5>
             <h3 class="text-gray-900 mb-3">
@@ -563,7 +564,7 @@ const MyCourses = () => {
               </div>
             </div>
           </div>
-        </a>
+        </ Link>
       </div>
     </div>
   </div>
