@@ -66,7 +66,7 @@ const SideMenu = () => {
                     </li>
                     <li
                         class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-6 py-1 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
-                        <Link to="instructors">
+                        <Link to="/instructors">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools" width="20" height="20"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CourseInner = () => {
   return (
@@ -6,7 +7,7 @@ const CourseInner = () => {
     <div class="w-full px-6">
       <div class="lg:flex flex-wrap">
         <div class="py-10 lg:w-2/3 w-full md:pr-6 sm:border-r border-gray-300">
-          <a href="courses.html">
+          <Link to="/courses">
             <div class="flex items-center">
               <div
                 class="mr-3 w-6 h-6 rounded-full text-gray-500 border border-gray-500 flex items-center justify-center">
@@ -19,7 +20,7 @@ const CourseInner = () => {
               </div>
               <h4 class="text-xl text-gray-900">Course Details</h4>
             </div>
-          </a>
+          </ Link>
           <h1 class="font-bold text-gray-800 text-5xl mt-6 mb-8 sm:text-left text-center">
             Introduction to Design Thinking
           </h1>
@@ -217,7 +218,7 @@ const CourseInner = () => {
             <h4 class="text-gray-900 text-xl font-medium">
               Upcoming Assignments
             </h4>
-            <a class="color-blue text-sm font-bold cursor-pointer">View All</a>
+            <Link class="color-blue text-sm font-bold cursor-pointer">View All</ Link>
           </div>
           <p class="text-gray-600 mb-6">09/02/20 - Applied UX Hueristics</p>
           <p class="text-gray-600 mb-6">09/02/20 - Applied UX Hueristics</p>
@@ -225,7 +226,7 @@ const CourseInner = () => {
           <div class="py-16">
             <div class="flex items-center justify-between mb-6">
               <h4 class="text-gray-900 text-xl font-medium">Resources</h4>
-              <a class="color-blue text-sm font-bold cursor-pointer">View All</a>
+              <Link class="color-blue text-sm font-bold cursor-pointer">View All</ Link>
             </div>
             <div class="xl:w-full xl:mx-0 border-b border-gray-300 rounded h-12 mb-8">
               <ul class="flex items-center xl:justify-between">
@@ -292,7 +293,7 @@ const CourseInner = () => {
           </div>
           <div class="flex items-center justify-between mb-6">
             <h4 class="text-gray-900 text-xl font-medium">Exams</h4>
-            <a class="color-blue text-sm font-bold cursor-pointer">View All</a>
+            <Link class="color-blue text-sm font-bold cursor-pointer">View All</ Link>
           </div>
           <p class="text-gray-600 mb-6">
             Exams have not yet been announced by your instructor, they will
