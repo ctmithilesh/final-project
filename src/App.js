@@ -11,11 +11,13 @@ import ForumPage from './Pages/ForumPage';
 import ForumThreadPage from './Pages/ForumThreadPage';
 import FAQPage from './Pages/FAQPage';
 import CourseInnerPage from './Pages/CourseInnerPage';
+import LoginPage from './Pages/LoginPage';
 
 function App() {
   return (
     <Routes>
       <Route exact path='/' element={<DashboardPage />} />
+      <Route exact path='/login' element={<LoginPage />} />
       <Route exact path='/courses' element={<CoursesPage />} />
       <Route exact path='/instructors' element={<InstructorsPage />} />
       <Route exact path='/view-instructor' element={<ViewInstructorPage />} />
