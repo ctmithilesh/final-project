@@ -12,11 +12,14 @@ import ForumThreadPage from './Pages/ForumThreadPage';
 import FAQPage from './Pages/FAQPage';
 import CourseInnerPage from './Pages/CourseInnerPage';
 import LoginPage from './Pages/LoginPage';
+import RegisterPage from './Pages/RegisterPage';
+import LogoutPage from './Pages/LogoutPage';
 
 function App() {
   return (
     <Routes>
       <Route exact path='/' element={<DashboardPage />} />
+      <Route exact path='/register' element={<RegisterPage />} />
       <Route exact path='/login' element={<LoginPage />} />
       <Route exact path='/courses' element={<CoursesPage />} />
       <Route exact path='/instructors' element={<InstructorsPage />} />
@@ -28,6 +31,7 @@ function App() {
       <Route exact path='/forum-thread' element={<ForumThreadPage />} />
       <Route exact path='/faqs' element={<FAQPage />} />
       <Route exact path='/courses-inner' element={<CourseInnerPage />} />
+      <Route exact path='/logout' element={<LogoutPage />} />
     </Routes>
   );
 }
