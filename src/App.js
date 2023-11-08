@@ -14,11 +14,15 @@ import CourseInnerPage from './Pages/CourseInnerPage';
 import LoginPage from './Pages/LoginPage';
 import RegisterPage from './Pages/RegisterPage';
 import LogoutPage from './Pages/LogoutPage';
+import { ProtectedRoute } from './ProtectedRoute';
 
 function App() {
   return (
     <Routes>
-      <Route exact path='/' element={<DashboardPage />} />
+      <Route element={<ProtectedRoute />}>
+          <Route exact path='/' element={<DashboardPage />} />
+      </Route>
+     
       <Route exact path='/register' element={<RegisterPage />} />
       <Route exact path='/login' element={<LoginPage />} />
       <Route exact path='/courses' element={<CoursesPage />} />

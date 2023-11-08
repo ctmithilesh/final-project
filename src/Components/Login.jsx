@@ -25,7 +25,7 @@ const Login = () => {
                     const result = await loginUser(username, password)
                     console.log(result)
                     if(result.success){
-                        cookies.set('user', JSON.stringify(result))
+                        cookies.set('user', result)
                         // localStorage.setItem('user', JSON.stringify(result))
                         console.log('Login successfully')
                         navigate('/')

@@ -2,17 +2,18 @@ import React, { useEffect } from 'react'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import { useNavigate } from 'react-router-dom'
+import Cookies from 'universal-cookie'
 
 const Logout = () => {
 
     const navigate = useNavigate()
     useEffect(()=>{
 
-        localStorage.clear()
+        const cookies = new Cookies()
+        cookies.remove('user')
         setTimeout(()=>{
             navigate('/login')
         },1000)
-       
 
     },[navigate])
 
