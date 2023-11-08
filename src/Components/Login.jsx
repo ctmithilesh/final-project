@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
 import { useForm  } from 'react-hook-form'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { loginUser } from '../Apis/loginUser'
+import Cookies from 'universal-cookie'
 
 const Login = () => {
 
     const [username, setUserName] = useState(null)
     const [password, setPassword] = useState(null)
+    const cookies = new Cookies()
+    const navigate = useNavigate()
 
     const {
         register,
@@ -14,9 +19,21 @@ const Login = () => {
       } = useForm()
 
 
-      const submitData = () => {
+      const submitData = async () => {
 
-
+                try{
+                    const result = await loginUser(username, password)
+                    console.log(result)
+                    if(result.success){
+                        cookies.set('user', JSON.stringify(result))
+                        // localStorage.setItem('user', JSON.stringify(result))
+                        console.log('Login successfully')
+                        navigate('/')
+                    }
+                }
+                catch(e){
+                    console.log(e)
+                }
       }
       
   return (
@@ -35,7 +52,12 @@ const Login = () => {
 
             <form onSubmit={handleSubmit(submitData)} class="bg-white shadow rounded lg:w-1/3  md:w-1/2 w-full p-10 mt-16">
                 <p tabindex="0" class="focus:outline-none text-2xl font-extrabold leading-6 text-gray-800">Login to your account</p>
-                <p tabindex="0" class="focus:outline-none text-sm mt-4 font-medium leading-none text-gray-500">Dont have account? <a href="javascript:void(0)"   class="hover:text-gray-500 focus:text-gray-500 focus:outline-none focus:underline hover:underline text-sm font-medium leading-none  text-gray-800 cursor-pointer"> Sign up here</a></p>
+                <p tabindex="0" class="focus:outline-none text-sm mt-4 font-medium leading-none text-gray-500">
+                    Dont have account? 
+                <Link to='/register' class="hover:text-gray-500 focus:text-gray-500 focus:outline-none focus:underline hover:underline text-sm font-medium leading-none  text-gray-800 cursor-pointer">
+                     Sign up here
+                </Link>
+                </p>
                 
                 <div class="w-full flex items-center justify-between py-5">
                      <hr class="w-full bg-gray-400" />
@@ -72,7 +94,7 @@ const Login = () => {
                             name="password"
                             class="bg-gray-200 border rounded  text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
                             {...register('password',{ required: true })}
-                            onChange={(e)=> setUserName(e.target.value)}
+                            onChange={(e)=> setPassword(e.target.value)}
                             />
                         <div class="absolute right-0 mt-2 mr-3 cursor-pointer">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

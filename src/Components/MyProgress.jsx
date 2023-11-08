@@ -1,12 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const MyProgress = () => {
+
+  const [user, setData] = useState({})
+
+  useEffect(()=>{
+
+      let user = localStorage.getItem('user')
+     // const userData = JSON.parse(user)
+      user = JSON.parse(user)
+     // console.log(user)
+      setData(user)
+
+  },[])
+
   return (
     <div class="py-10 lg:w-1/3 w-full md:pl-6 md:px-0 px-4">
     <h3 class="mb-10 text-gray-900 font-medium text-xl">
       My Progress
     </h3>
-
     <div class="sm:hidden relative w-11/12 mx-auto rounded">
       <div class="absolute inset-0 m-auto mr-4 z-0 w-6 h-6">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-selector" width="24"
@@ -34,7 +46,7 @@ const MyProgress = () => {
             Metrics
           </li>
           <li onclick="activeTab(this)" class="text-sm text-gray-600 py-2 px-4 rounded text-sm cursor-pointer">
-            Norifications
+            Notifications
           </li>
           <li onclick="activeTab(this)" class="text-sm text-gray-600 py-2 px-4 rounded text-sm cursor-pointer">
             Announcements
@@ -48,8 +60,9 @@ const MyProgress = () => {
               src="https://image.freepik.com/free-photo/indoor-picture-cheerful-handsome-young-man-having-folded-hands-looking-directly-smiling-sincerely-wearing-casual-clothes_176532-10257.jpg"
               alt="" />
           </div>
-          <h5 class="mb-2 text-gray-800">Timothy Jon Oliphant</h5>
-          <p class="text-gray-600 text-xs">Marketing Professional</p>
+          
+          <h5 class="mb-2 text-gray-800">{user.email}</h5>
+          <p class="text-gray-600 text-xs">{user.role}</p>
         </div>
         <div class="mt-8 flex items-center">
           <div class="w-full md:w-1/2 bg-gray-100 py-8 px-4 mr-2">
